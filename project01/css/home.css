@@ -1,0 +1,53 @@
+@import url('href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans&family=Roboto&display=swap');
+
+h1 {
+  font-family: 'Roboto', fantasy;
+  font-weight: bolder;
+  color:white;
+  font-size: 50px;
+  margin:0;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url(https://cdn.pixabay.com/photo/2016/05/04/00/21/sky-1370602_1280.jpg);
+}
+
+#home, #chicago, #nyc, #tokyo, #paris, #suggestions {
+    background: skyblue;
+    font-family: 'Montserrat', cursive;
+    color: white;
+    float:left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 17px;
+    width: 16.6%;
+    text-transform: uppercase;
+}
+
+#home:hover, #chicago:hover, #nyc:hover, #tokyo:hover, #paris:hover, #suggestions:hover {
+  background: #e6f2ff;
+  color:black;
+}
+
+.intro {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    color: white;
+}
+
+.intro > * {
+    max-width: 50vw;
+}
+.intro h2 {
+    margin-top: 200px;
+}
+.intro p {
+    margin-bottom: 20px;
+}
