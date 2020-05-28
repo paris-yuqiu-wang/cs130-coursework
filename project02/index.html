@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Our Travel Blog</title>
+        <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/carousel.css">
+        <link rel="stylesheet" href="css/home.css">
+        <!-- <link rel="stylesheet" href="css/map.css"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <main>
+            <nav>
+                <h1>Our Travel Blog</h1>
+                <section class="buttons">
+                  <button id="home">Home</button>
+                  <button id="chicago">Chicago</button>
+                  <button id="nyc">NYC</button>
+                  <button id="tokyo">Tokyo</button>
+                  <button id="paris">Paris</button>
+                </section>
+            <nav>
+            <div class="intro">
+              <section class = "homeintro">
+                <div class="wrapper divider">
+                <h2> Welcome to our site! </h2>
+                <p> Here, we will show you our favorite cities in the world and share our journey with you. </p>
+                </div>
+              </section>
+
+              <section class="profile">
+                <div class="wrapper">
+                  <h3>About Us</h3>
+
+                  <div class="row">
+                    <div class="column1">
+                      <img src="profile/profile1.JPG" alt="Ashley Wei" style="width:100%">
+                    </div>
+                    <div class="column1">
+                      <img src="profile/profile2.JPG" alt="Paris Wang" style="width:100%">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="column1">
+                      <h4> Ashley Wei </h4>
+                      <p>I'm currently a Northwestern senior majoring in Economics and Statistics. I'm graduating in June 2020. <br>
+                        I’m enthusiastic about photography and have been using photography as a way to record my life. Check out <a href="https://www.instagram.com/ashieeeeee_/" target="_blank">My Instagram Profile</a>, to see the photos I took! </p>
+
+                      <p>My favorite city now is Paris, France, but I might change my mind as my journey continues!</p>
+                    </div>
+
+                    <div class="column1">
+                      <h4> Paris Wang </h4>
+                      <p>I'm currently a Northwestern senior majoring in Economics, with a minor in Political Science and Business Institutions. I'm graduating in June 2020. <br>
+                        I’m very passionate about food and traveling. While traveling, I love to document all the fun places I've been and local cuisines I've tried. Check out <a href="https://www.instagram.com/pariss_wang/" target="_blank">My Instagram Profile</a>, to see the photos I took! </p>
+
+                      <p>My favorite cities are New York and London. Hopefully, I will be able to visit London again one day!</p>
+                      </p>
+                    </div>
+                    </div>
+                  </div>
+              </section>
+
+              <section class="container">
+                <div class="wrapper divider">
+                  <h3> Places We've Been to </h3>
+                  <p> We've been to many places in the world, but Chicago, New York City, Tokyo, and Paris are the 4 most memorable cities to us. <br>
+                    Please feel free to click on the button on the map and explore these cities with us! </p>
+
+                <div class="map-container">
+                  <img src="http://res.cloudinary.com/slzr/image/upload/v1500321012/world-map-1500_vvekl5.png">
+                  <button class="point chicago" title="Chicago"></button>
+                  <button class="point nyc" title="New York City"></button>
+                  <button class="point tokyo" title="Tokyo"></button>
+                  <button class="point paris" title="Paris"></button>
+                </div>
+
+                <div class="comments">
+                  <h5> Which city would you like us to introduce next? </h5>
+                  <!-- we found the following code through online research, in the next deliverable, we will make our own database and store the comments as JSON -->
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+                  </script>
+                  <body>
+                    <div class="info">
+                      <label for="example">
+                        <p> Enter your suggestions or comments: </p>
+                      </label>
+                      <input id="example" type="text"
+                             name="Ntext" size="50">
+                      <input id="sent" type="submit"
+                             value="Send">
+                    </div>
+                    <p id="para">
+                    </p>
+                  </body>
+                  <script>
+                    window.onclick = function(e)
+                    {   var id =  e.target.id;
+                     if (id === 'sent')
+                     { var txt = document.getElementById('example').value
+                       $( "#para" ).append (" ");
+                       $( "#para" ).append( txt );
+                     }
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+
+            <div class="cards">
+                <!-- dynamically add cards here -->
+            </div>
+
+            <!-- preview panel -->
+            <section class="preview_box">
+                <div class="featured_image" style="background-image:url('images/placeholder.jpg')"></div>
+                <button class="close">&times;</button>
+                <button class="prev">&lsaquo;</button>
+                <button class="next">&rsaquo;</button>
+            </section>
+            <!-- end preview panel -->
+
+        </main>
+        <script type="text/javascript" src="js/carousel.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <!-- <script type="text/javascript" src="js/map.js"></script> -->
+    </body>
+</html>

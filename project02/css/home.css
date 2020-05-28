@@ -1,0 +1,178 @@
+@import url('href="https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans&family=Roboto&display=swap');
+
+/* headline styles */
+
+h1 {
+  font-family: 'Roboto', fantasy;
+  font-weight: bolder;
+  color:white;
+  font-size: 50px;
+  margin:0;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: url(https://cdn.pixabay.com/photo/2016/05/04/00/21/sky-1370602_1280.jpg);
+}
+
+#home, #chicago, #nyc, #tokyo, #paris, #suggestions {
+    background: skyblue;
+    font-family: 'Montserrat', cursive;
+    color: white;
+    float:left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 17px;
+    width: 20%;
+    text-transform: uppercase;
+}
+
+#home:hover, #chicago:hover, #nyc:hover, #tokyo:hover, #paris:hover, #suggestions:hover {
+  background: #e6f2ff;
+  color:black;
+}
+
+/* profile and introduction */
+
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.divider > section {
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  margin: auto;
+}
+
+.column1 img{
+  height:520px;
+  border: 50px solid transparent;
+  padding: 3px;
+  background-color: hsla(0, 100%, 90%, 0.3);
+  border-image: url(https://www.seekpng.com/png/full/4-44746_watercolor-flowers-borders-elements-ornaments-png-free-vintage.png) 80 round;
+  border-radius: 50px;
+}
+
+h2, h3, h5 {
+  justify-content: center;
+  padding-top: 10px;
+  margin-left: 10px;
+  font-family: 'Roboto', fantasy;
+  font-weight: bolder;
+  font-stretch: semi-expanded;
+  font-size: 35px;
+}
+
+h2 {
+  padding-top: 10px;
+}
+
+.homeintro p {
+  justify-content: center;
+  padding-top: 0px;
+  margin-left: 15px;
+  font-family: 'PT Sans',monospace;
+  font-size: 20px;
+}
+
+
+.column1 h4{
+  justify-content: center;
+  padding-top: 0px;
+  margin-left: 200px;
+  font-family: 'Roboto', fantasy;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.column1 p{
+  justify-content: center;
+  padding-top: 0px;
+  margin-left: 37px;
+  font-family: 'PT Sans',monospace;
+  font-size: 20px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* map styles */
+.container p {
+  font-family: 'PT Sans',monospace;
+  font-size: 20px;
+  padding-left: 13px;
+}
+
+.map-container {
+  padding: 3.2rem .8rem;
+  position: relative;
+  display: inline-block;
+  }
+
+.map-container img{
+  width: 1000px;
+}
+
+.map-container .point {
+  cursor: pointer;
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #50C8C6;
+  border-radius: 50%;
+  transition: all .3s ease;
+  will-change: transform, box-shadow;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 rgba(0, 172, 193, 0.4);
+  animation: pulse 3s infinite;
+}
+.map-container .point:hover {
+  animation: none;
+  transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.map-container .chicago {
+  top: 32%;
+  left: 15%;
+}
+.map-container .nyc {
+  top: 36%;
+  left: 20%;
+}
+.map-container .tokyo {
+  top: 36%;
+  left: 85%;
+}
+.map-container .paris {
+  top: 27%;
+  left: 46%;
+}
+
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 172, 193, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 25px rgba(0, 172, 193, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 172, 193, 0);
+  }
+}
