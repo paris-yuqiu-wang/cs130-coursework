@@ -1,4 +1,4 @@
-const chicago = ['chicago/chi01.JPG', 'chicago/chi02.jpg', 'chicago/chi03.jpg',
+const chicago = ['chicago/chi01.jpg', 'chicago/chi02.jpg', 'chicago/chi03.jpg',
                  'chicago/chi04.jpg', 'chicago/chi05.jpg', 'chicago/chi06.jpg',
                  'chicago/chi07.jpg', 'chicago/chi08.jpg', 'chicago/chi09.jpg',
                  'chicago/chi10.jpg', 'chicago/chi11.jpg', 'chicago/chi12.jpg',
