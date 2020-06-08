@@ -1,6 +1,6 @@
 //build a dictionary
 const chicago = {
-  'chicago/chi01.JPG': "Downtown Chicago",
+  'chicago/chi01.jpg': "Downtown Chicago",
   'chicago/chi02.jpg': "Louis Vuitton Pop-up",
   'chicago/chi03.jpg': "Yummy Seafood",
   'chicago/chi04.jpg': "Sunset",
