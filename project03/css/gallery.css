@@ -1,0 +1,70 @@
+body {
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300vh;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.photoCards {
+    width: 25%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    overflow:scroll;
+}
+
+.caption {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  font-family: 'PT Sans',monospace;
+}
+
+.card {
+    width: 320px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-left: 20px;
+    overflow:scroll;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    main .photoCards {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 900px) {
+    main .photoCards {
+        width: 50%;
+    }
+}
+
+@media (max-width: 550px) {
+    main .photoCards {
+        width: 100%;
+    }
+}

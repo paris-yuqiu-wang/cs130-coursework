@@ -1,4 +1,4 @@
-const chicago = ['chicago/chi01.jpg', 'chicago/chi02.jpg', 'chicago/chi03.jpg',
+const chicago = ['../chicago/chi01.jpg', '../chicago/chi02.jpg', '../chicago/chi03.jpg',
                  'chicago/chi04.jpg', 'chicago/chi05.jpg', 'chicago/chi06.jpg',
                  'chicago/chi07.jpg', 'chicago/chi08.jpg', 'chicago/chi09.jpg',
                  'chicago/chi10.jpg', 'chicago/chi11.jpg', 'chicago/chi12.jpg',
@@ -30,6 +30,22 @@ const paris = ['paris/paris01.JPG', 'paris/paris02.JPG', 'paris/paris03.JPG',
 const togglePhotos = (ev) => {
   document.querySelector('.intro').style.display ="none";
   document.querySelector('.cards').style.display ="flex";
+  // const cityID = ev.currentTarget.id;
+  // const city = cities[cityID];
+  // const description = document.querySelector('.description');
+  // const cards = document.querySelector('.cards');
+  // description.innerHTML += `
+  //               <h3>${city.description}</h3>
+  //           `;
+  //           for (const item of city.image) {
+  //             let myCard = `
+  //             <div class="card" style="background-image:url('${item}')"></div>
+  //             `;
+  //             cards.innerHTML += myCard;
+  //             }
+  //             initCarousel();
+  //           };
+
   let userChoiceList = chicago;
   if (ev.srcElement.innerHTML === 'NYC') {
      userChoiceList = nyc;
@@ -44,12 +60,17 @@ const togglePhotos = (ev) => {
 
   for (const imageURL of userChoiceList) {
     let myCard = `
-        <div class="card" style="background-image:url('${imageURL}')"></div>
+      <div class="photocard">
+      <img src= ${imageURL}/> 
+      <p>telakjsdlkfjslkdf</p> 
+      </div>
     `;
     document.querySelector('.cards').innerHTML += myCard;
   }
   initCarousel();
 };
+
+// <div class="card" style="background-image:url('${imageURL}')"></div>
 
 
 const showHome = (ev) => {
@@ -90,13 +111,36 @@ clickparis[0].onclick = toggleParis
 
 /* photo gallery functions*/
 
-// const showComments = (ev) => {
-//   document.querySelector('.comments').style.display ="block";
-//   document.querySelector('.intro').style.display ="none";
-//   document.querySelector('.cards').style.display ="none";
-// }
+const showComments = (ev) => {
+  document.querySelector('.comments').style.display ="block";
+  document.querySelector('.intro').style.display ="none";
+  document.querySelector('.cards').style.display ="none";
+}
 
-document.querySelector('#home').onclick = showHome;
+// const attachClickEvents = () => {
+//     const button = document.querySelector('#buttons');
+//     const links = button.querySelectorAll('a');
+//     for (const link of links) {
+//         link.onclick = togglePhotos; // this is what modifies the template
+//     }
+// };
+
+
+// We are fetching data from two local files and storing them to
+// local variables that we can later access.
+// fetch('cities.json')
+//     .then(response => response.json())
+//     .then(data => {
+//         cities = data; // setting global variable
+//     })
+//     //also, we are attaching click events to each link:
+//     .then(attachClickEvents)
+//     .then(() => {
+//         document.querySelector('#buttons a').click();
+//           });
+//
+// document.querySelector('#home').onclick = showHome;
+
 document.querySelector('#chicago').onclick = togglePhotos;
 document.querySelector('#nyc').onclick = togglePhotos;
 document.querySelector('#tokyo').onclick = togglePhotos;
