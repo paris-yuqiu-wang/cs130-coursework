@@ -192,6 +192,7 @@ h2 {
 /* Footer */
 .footer {
   background-image: url(https://cdn.pixabay.com/photo/2016/05/04/00/21/sky-1370602_1280.jpg);
+  padding: 0px;
 }
 
 h6 {
