@@ -192,7 +192,6 @@ h2 {
 /* Footer */
 .footer {
   background-image: url(https://cdn.pixabay.com/photo/2016/05/04/00/21/sky-1370602_1280.jpg);
-  padding: 0px;
 }
 
 h6 {
@@ -206,11 +205,12 @@ h6 {
   padding-top: 50px;
   padding-bottom: 15px;
 }
+
 .contacts {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  padding-bottom: 50px;
+  padding: 0;
   font-family: 'PT Sans',monospace;
   font-size: 20px;
 }
@@ -218,6 +218,8 @@ h6 {
 .contacts a {
   color: white;
   padding-right: 15px;
+  margin-bottom: 50px;
+  display: inline-block;
 }
 
 /* Media Queries */

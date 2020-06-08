@@ -52,19 +52,19 @@ body * {
 
 /* Media Queries */
 @media (max-width: 1200px) {
-    main .photoCards {
+    .photoCards {
         width: 33.33%;
     }
 }
 
 @media (max-width: 900px) {
-    main .photoCards {
+    .photoCards {
         width: 50%;
     }
 }
 
 @media (max-width: 550px) {
-    main .photoCards {
+    .photoCards {
         width: 100%;
     }
 }
